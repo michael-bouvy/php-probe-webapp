@@ -1,0 +1,38 @@
+probes:
+  Google.com_HTTP:
+    type: Http
+    options:
+      url: http://www.google.com
+      timeout: 5
+    checkers:
+      http:
+        httpCode: 302
+  Google.fr_HTTPS:
+    type: Http
+    options:
+      url: https://www.google.fr
+      timeout: 5
+    checkers:
+      http:
+        httpCode: 200
+        content: <title>Google</title>
+      generic:
+        responseTime: 0.01
+  Google_DNS:
+    type: Tcp
+    adapter: Netcat
+    options:
+      host: 8.8.8.8
+      port: 53
+    checkers:
+      generic:
+        responseTime: 1
+  MySQL_Local:
+    type: Database
+    options:
+      host: local-db
+      user: root
+      password:
+    checkers:
+      database:
+        database: [test, mysql, bootstrap, phpprobe]

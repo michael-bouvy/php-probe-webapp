@@ -1,0 +1,5 @@
+{
+    "require": {
+        "php-probe/php-probe": "dev-master"
+    }
+}
