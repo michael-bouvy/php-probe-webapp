@@ -6,4 +6,4 @@ This tiny Bootstrap-enabled webapp shows how you can simply display your [PhpPro
 Example screenshot :
 
 
-![Screenshot](https://github.com/michael-bouvy/php-probe/raw/master/screenshot.png "PhpProbe webapp screenshot")
+![Screenshot](https://raw2.github.com/michael-bouvy/php-probe-webapp/master/screenshot.png "PhpProbe webapp screenshot")
